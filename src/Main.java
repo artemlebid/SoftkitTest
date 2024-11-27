@@ -40,7 +40,7 @@ public class Main {
             System.out.printf("Warning! Here can't be %d columns because you have only %d items in list\n\n", columnCount, lines.size());
         }
 
-        // Find a size of length
+        // Find a size of line
         int lineWidth = lines.stream().mapToInt(String::length).max().orElse(0) + 5;
 
         // Loop that print a table
